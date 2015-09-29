@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="FieldBinaryFile">
+        <t t-jquery="a.oe_form_uri" t-operation="after">
+            <div class="preview_binary"><iframe style="display:none;"/></div>
+        </t>
+    </t>
+</templates>

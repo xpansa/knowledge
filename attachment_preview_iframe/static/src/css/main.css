@@ -1,0 +1,6 @@
+.preview_binary > iframe
+{
+	display: none;
+	width: 100%;
+	min-height: 300px;
+}
