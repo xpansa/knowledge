@@ -14,7 +14,7 @@ openerp.attachment_preview_iframe = function(instance) {
         render_value: function() {
             this._super.apply(this, arguments);
             var self = this;
-            if (this.get("effective_readonly") && this.get('value')) {
+            if (this.get('value')) {
                 (new instance.web.Model('ir.attachment')).call(
                     'get_binary_extension', [
                         this.view.dataset.model,
