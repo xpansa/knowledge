@@ -40,11 +40,15 @@ openerp.attachment_preview_iframe = function(instance) {
                                         self.view.datarecord.id),
                                     extension,
                                     _.str.sprintf(_t('Preview %s'), self.field.string));
-                                iframe.prop('src', url).show();
+                                iframe.replaceWith($('<iframe/>', {
+                                    src: url
+                                }).show());
                                 oe_form_uri.hide();
                                 oe_binary_preview.hide();
                             } else {
-                                iframe.prop('src', '').hide();
+                                iframe.replaceWith($('<iframe/>', {
+                                    src: ''
+                                }).hide());
                                 oe_form_uri.show();
                                 oe_binary_preview.show();
                             }

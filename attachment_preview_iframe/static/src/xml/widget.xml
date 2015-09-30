@@ -2,7 +2,7 @@
 <templates id="template" xml:space="preserve">
     <t t-extend="FieldBinaryFile">
         <t t-jquery="a.oe_form_uri" t-operation="after">
-            <div class="preview_binary"><iframe style="display:none;"/></div>
+            <div class="preview_binary"><iframe/></div>
         </t>
     </t>
 </templates>
